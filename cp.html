@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>The cp Command</title>
+    <link rel="stylesheet" type="text/css" href="css/unix_css.css">
+        <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+            <script src="final.js" type="text/javascript"></script>
+        <meta charset="utf-8"/>
+</head>
+
+<body>
+      <div id="pageheader">
+        <img id="head" src="images/unix_banner.jpg" alt="Header"/>
+    </div>
+        <div id="navbar">
+    <ul id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">About The Site</a></li>
+        <li><a href="http://people.rit.edu/gtc5091/409/">Contact Me</a></li>
+        <li>
+            <a href="files.html">Working With Files</a>
+            <ul id="submenu_files">
+                <li><a href="chmod.html">chmod</a></li>
+                <li><a href="cp.html">cp</a></li>
+                <li><a href="diff.html">diff</a></li>
+                <li><a href="gzip.html">gzip</a></li>
+                <li><a href="lpr.html">lpr</a></li>
+                <li><a href="ls.html">ls</a></li>
+                <li><a href="mv.html">mv</a></li>
+                <li><a href="rm.html">rm</a></li>
+                
+            </ul>
+        </li>
+         <li>
+            <a href="directories.html">Directory Commands</a>
+            <ul>
+                <li><a href="pwd.html">pwd</a></li>
+                <li><a href="mkdir.html">mkdir</a></li>
+                <li><a href="rmdir.html">rmdir</a></li>
+                <li><a href="cd.html">cd</a></li>
+            </ul>
+        </li>
+          <li>
+            <a href="keeping_tabs.html">Keeping Tabs</a>
+            <ul>
+                <li><a href="elm.html">elm</a></li>
+                <li><a href="finger.html">finger</a></li>
+                <li><a href="talk.html">talk</a></li>
+                <li><a href="who.html">who</a></li>
+            </ul>
+           </li>
+          <li><a href="form.html">Final Quiz</a></li>
+    </ul>
+   </div>
+        <div id="content">
+<h1>The cp Command: Copycat!</h1>
+
+<p>Ever wanted a file in more than one directory? Well, the cp command will most definitely get the job done for you.
+This command enables you to copy files. You might be wondering if the cp command is useful. May I kindly state that it can be
+useful, especially if you accidentally delete a file. With this command, you can have a copy of the same file saved somewhere else or even
+in the same directory. There are two of many ways in which you can use the cp command. One way is its default function, which is copying files
+from one location to the next. Another way is using the * wildcard followed by an extension to copy all files with the same extension to a
+designated directory. Below are examples of how to use this command in both ways:</p>
+
+<ul>
+    <li><em>cp filename newDirectory</em></li>
+    <li><em>cp *fileExtension newDirectory</em></li>
+</ul>
+
+<p>Now apply these commands in a real scenario like the one shown below</p>
+<ul>
+    <li><em>cp my.txt my_folder</em></li>
+    <li><em>cp *.txt my_folder</em></li>
+</ul>
+         <div id="footer">
+    <p>Copyright &copy; Gary Cunningham. All Rights Reserved</p>
+</div>
+        </div>
+         <div id="right">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li>Home Page
+                <ul>
+                   <li>Intro to Unix</li> 
+                </ul>
+                </li>
+                <li>About The Site
+                <ul>
+                    <li>Navigation</li>
+                    <li>Chunking the Content</li>
+                </ul>
+                </li>
+                <li>Contact Me</li>
+                <li>Working With Files
+                <ul>
+                    <li>Chmod</li>
+                    <li>Cp</li>
+                    <li>Diff</li>
+                    <li>Gzip</li>
+                    <li>Lpr</li>
+                    <li>Ls</li>
+                    <li>Mv</li>
+                    <li>Rm</li>
+                </ul>
+                </li>
+                <li>Directory Commands
+                <ul>
+                    <li>Pwd</li>
+                    <li>Mkdir</li>
+                    <li>Rmdir</li>
+                    <li>Cd</li>
+                </ul>
+                </li>
+                 <li>Keeping Tabs
+                <ul>
+                    <li>Elm</li>
+                    <li>Finger</li>
+                    <li>Talk</li>
+                    <li>Who</li>
+                </ul>
+                </li>
+            </ul>
+<button onclick="determineAnswer()">Quick Quiz!</button>
+
+<script>
+function determineAnswer()
+{
+var goodAnswer;
+var wrongAnswer;
+var answer=prompt("The cp command _____ files");
+
+if (answer == "Copies" || answer == "copies")
+  {
+    goodAnswer = "Nice job! Correct Answer"
+    alert(goodAnswer);
+  }
+  else {
+    wrongAnswer = "Oops! Sorry, that is not correct..."
+  alert(wrongAnswer);
+  }
+}
+</script>
+        </div>
+</body>
+</html>

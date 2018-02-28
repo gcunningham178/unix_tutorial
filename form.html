@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>The cd Command</title>
+    <meta charset="utf-8"/>
+     <link rel="stylesheet" type="text/css" href="css/unix_css.css">
+          <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+            <script src="final.js" type="text/javascript"></script>
+</head>
+
+<body>
+      <div id="pageheader">
+        <img id="head" src="images/unix_banner.jpg" alt="Header"/>
+    </div>
+<div id="navbar">
+    <ul id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">About</a></li>
+        <li><a href="http://people.rit.edu/gtc5091/409/">Meet the Author</a></li>
+        <li>
+            <a href="files.html">Working With Files</a>
+            <ul id="submenu_files">
+                <li><a href="chmod.html">chmod</a></li>
+                <li><a href="cp.html">cp</a></li>
+                <li><a href="diff.html">diff</a></li>
+                <li><a href="gzip.html">gzip</a></li>
+                <li><a href="lpr.html">lpr</a></li>
+                <li><a href="ls.html">ls</a></li>
+                <li><a href="mv.html">mv</a></li>
+                <li><a href="rm.html">rm</a></li>
+                
+            </ul>
+        </li>
+          <li>
+            <a href="directories.html">Directory Commands</a>
+            <ul>
+                <li><a href="pwd.html">pwd</a></li>
+                <li><a href="mkdir.html">mkdir</a></li>
+                <li><a href="rmdir.html">rmdir</a></li>
+                <li><a href="cd.html">cd</a></li>
+            </ul>
+        </li>
+          <li>
+            <a href="keeping_tabs.html">Keeping Tabs</a>
+            <ul>
+                <li><a href="elm.html">elm</a></li>
+                <li><a href="finger.html">finger</a></li>
+                <li><a href="talk.html">talk</a></li>
+                <li><a href="who.html">who</a></li>
+            </ul>
+           </li>
+          <li><a href="form.html">Final Quiz</a></li>
+    </ul>
+   </div>
+<form name="expandedQuiz"  action="form.html" onsubmit="return validateQuiz(this.form)" method="get">
+    <fieldset>
+        <legend>Understanding Directory Commands</legend>
+    1. What are two commands that affect directories?<br>
+    <input id="one" type="radio" name="dirCom" value="rmdir and mkdir">rmdir and mkdir<br>
+    <input type="radio" name="dirCom" value="elm and mkdir">elm and mkdir<br>
+    <input type="radio" name="dirCom" value="ls and talk">ls and talk<br>
+    <input type="radio" name="dirCom" value="cd and finger">cd and finger<br><br>
+    
+    2. What contents does the ls command list as an output on the terminal?<br>
+      <input id="two" type="radio" name="lsCom" value="Content within the working directory">Content within the working directory<br>
+    <input type="radio" name="lsCom" value="All files">All files<br>
+    <input type="radio" name="lsCom" value="Certain files specified by the user">Certain files specified by the user<br>
+    <input type="radio" name="lsCom" value="Nothing">Nothing<br><br>
+    
+    3. What command can be used interchangably when working with files and directories?<br>
+    <input type="radio" name="intCom" value="cp">cp<br>
+    <input id="three" type="radio" name="intCom" value="pwd">pwd<br>
+    <input type="radio" name="intCom" value="chmod">chmod<br>
+    <input type="radio" name="intCom" value="None of these">None of these<br><br>
+    
+    4. What command can you use when you forget what directory you are currently in?<br>
+    <input type="radio" name="wdCom" value="cp">cp<br>
+    <input type="radio" name="wdCom" value="cd">cd<br>
+    <input type="radio" name="wdCom" value="talk">talk<br>
+    <input id="four" type="radio" name="wdCom" value="pwd">pwd<br><br>
+    
+    5. True or false: You can change to a different directory using the cd command
+    <input id="five" type="text" name="dirCom2"><br><br>
+    </fieldset><br><br>
+    
+    
+    <fieldset>
+        <legend>Using Commands that Work With Files</legend>
+        6. The cp command allows you to ______ files<br>
+        <input type="radio" name="fileCom" value="move">move<br>
+         <input id="six" type="radio" name="fileCom" value="copy">copy<br>
+        <input type="radio" name="fileCom" value="create">create<br>
+        <input type="radio" name="fileCom" value="delete">delete<br><br>
+        
+        7. What command allows you to communicate with another user?
+        <input id="seven" type="text" name="fileCom2"><br><br>
+        
+        8. What command allows you to locate a user nearby?
+        <input id="eight" type="text" name="fileCom3"><br><br>
+        
+        9. Altering modes, or permissions, of directories and files are important. Which command allows you to do this?<br>
+             <input  type="radio" name="fileCom4" value="gzip">gzip<br>
+            <input id="nine" type="radio" name="fileCom4" value="chmod">chmod<br>
+            <input type="radio" name="fileCom4" value="none">none<br>
+            <input type="radio" name="fileCom4" value="lpr">lpr<br><br>
+            
+        10. What are the access levels of files and permissions?<br>
+        <input type="radio" name="access" value="read">read<br>
+        <input type="radio" name="access" value="execute">execute<br>
+        <input type="radio" name="access" value="show">show<br>
+        <input type="radio" name="access" value="write">write<br>
+        <input type="radio" name="access" value="first">first, second, and fourth choice<br><br>
+        
+        <input type="submit" onclick="return validateQuiz()" value="Done">
+    </fieldset>
+</form>
+<div id="footer">
+    <p>Copyright &copy; Gary Cunningham. All Rights Reserved</p>
+</div>
+
+
+</body>
+</html>

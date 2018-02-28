@@ -1,0 +1,237 @@
+/*  Commented the more advanced CSS for future references*/
+body {
+    background-color: black;
+    position: absolute;
+    }
+button {
+    margin-left: 40px;
+    width: 130px;
+    height: 40px;
+}
+form{
+    width: 800px;
+    margin-left: 200px;
+    color: black;
+    background-color: gray;
+    font-weight: bold;
+    padding: 2em;
+    font-family: "Helvetica", "Arial";
+     
+}
+
+legend
+{
+    font-size: large;
+     font-family: "Helvetica", "Arial";
+     text-shadow: 1px 2px 1px gray;
+}
+
+
+h1, h2{
+    color: white;
+    padding: 10px;
+    font-family: "Helvetica", "Arial";
+    border-bottom-right-radius: 30px;
+    border-right-style: groove;
+    border-right-color: white;
+    border-width: 12px;
+    border-bottom: groove;
+    border-bottom-color: white;
+    text-shadow: 2px 3px 2px black;
+    box-shadow: 2px 3px 2px black;
+     
+     background-color: gray;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(80%, gray)) !important;
+    background: -o-linear-gradient(black, white) !important; 
+    background: -webkit-linear-gradient(#000000, #CCCCCC) !important;
+    background: linear-gradient(#000000, #CCCCCC) !important;
+    background: -moz-linear-gradient(#000000, #CCCCCC) !important; 
+    
+}
+
+#pageheader img{
+    width: 1310px;
+    height: 90px;
+    border-bottom: ridge;
+    border-bottom-width: 7px;
+    border-radius: 20px;
+}
+
+#clickHere
+{
+    width: 700px;
+    height: 40px;
+    text-align: center;
+      background-color: gray;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(80%, red)) !important;
+    background: -o-linear-gradient(black, red) !important; 
+    background: -webkit-linear-gradient(#000000, red) !important;
+    background: linear-gradient(#000000, red) !important;
+    background: -moz-linear-gradient(#000000, red) !important;
+    margin-left: 90px;
+    
+}
+button{
+    color: white;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(80%, red)) !important;
+    background: -o-linear-gradient(black, red) !important; 
+    background: -webkit-linear-gradient(#000000, red) !important;
+    background: linear-gradient(#000000, red) !important;
+    background: -moz-linear-gradient(#000000, red) !important;
+    margin-left: 90px;
+}
+#dirCom
+{
+     width: 500px;
+   
+    text-align: center;
+    background-color: gray;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(80%, red)) !important;
+    background: -o-linear-gradient(black, red) !important; 
+    background: -webkit-linear-gradient(#000000, red) !important;
+    background: linear-gradient(#000000, red) !important;
+    background: -moz-linear-gradient(#000000, red) !important;
+    margin-left: 180px;
+}
+h3{
+    color: gray;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-family: "Helvetica", "Arial";
+}
+#content {
+    width: 980px;
+    position: static;
+    float: right;
+    margin-right: 15px;
+    margin-top: 0;
+
+}
+
+#right {
+    background-color: #666666;
+    width: 270px;
+    float: left;
+     border-right: ridge;
+    border-width: 7px;
+    border-color: white;
+}
+#footer {
+    color: white;
+    border-top: ridge;
+    border-color: white;
+    border-top-width: 5px;
+    text-align: center;
+    font-family: "Helvetica", "Arial";
+}
+
+#navbar {
+  padding-bottom: 0;
+}
+
+li{
+    color: white;
+    font-size: 19px;
+    font-family: "Helvetica", "Arial";
+}
+
+
+
+p {
+    color: white;
+    font-size: 19px;
+    text-indent: 1.2em;
+    font-family: "Helvetica", "Arial";
+}
+
+
+
+#center h1 {
+    text-align: center;
+}
+
+     
+
+#nav {
+    list-style-type: none;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    margin-left: 0;
+    border-bottom: ridge;
+    border-bottom-color: white;
+    border-width: 6px;
+    }
+
+#nav li {
+    float: left;
+    position: relative;
+    padding: 0; line-height: 40px;
+    border-style: ridge;
+    border-color: white; 
+    background-color: gray;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(80%, gray)) !important;
+    background: -o-linear-gradient(black, white) !important; 
+    background: -webkit-linear-gradient(#000000, #CCCCCC) !important;
+    background: linear-gradient(#000000, #CCCCCC) !important;
+    background: -moz-linear-gradient(#000000, #CCCCCC) !important;  }
+
+#nav li:hover {
+    background-position: 0 -20px;
+    }
+
+#nav li a {
+    color: white; 
+    padding: 0 15px;
+    display: block;
+    text-transform: uppercase;
+    font-family: "Helvetica";
+    text-decoration: none;
+    }
+
+#nav li a:hover {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+  
+    }
+
+#nav li ul {
+     position: absolute;
+    opacity: 0;
+    width: 8em;
+    left: 0;  
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+
+#nav li:hover ul { opacity: 1; }
+
+#nav li ul li { float: none; position: static; height: 0; line-height: 0;  background: none;  }
+
+#nav li:hover ul li { height: 30px; line-height: 30px; }
+
+#nav li ul li a {   background-color: gray;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(80%, gray)) !important;
+    background: -o-linear-gradient(black, white) !important; 
+    background: -webkit-linear-gradient(#000000, #CCCCCC) !important;
+    background: linear-gradient(#000000, #CCCCCC) !important;
+    background: -moz-linear-gradient(#000000, #CCCCCC) !important;  }
+
+#nav li ul li a:hover {   background-color: gray;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(80%, gray)) !important;
+    background: -o-linear-gradient(black, white) !important; 
+    background: -webkit-linear-gradient(#000000, #CCCCCC) !important;
+    background: linear-gradient(#000000, #CCCCCC) !important;
+    background: -moz-linear-gradient(#000000, #CCCCCC) !important;  }
+
+        
+#nav li { -webkit-transition: all 0.3s; }
+
+#nav li a { -webkit-transition: all 0.8s; }
+
+#nav li ul { -webkit-transition: all 1.4s; }
+
+#nav li ul li { -webkit-transition: height 0.9s; }
+
+

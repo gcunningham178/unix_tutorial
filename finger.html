@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>The finger Command</title>
+     <link rel="stylesheet" type="text/css" href="css/unix_css.css">
+        <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+            <script src="final.js" type="text/javascript"></script>
+        <meta charset="utf-8"/>
+</head>
+
+<body>
+      <div id="pageheader">
+        <img id="head" src="images/unix_banner.jpg" alt="Header"/>
+    </div>
+       <div id="navbar">
+    <ul id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">About The Site</a></li>
+        <li><a href="http://people.rit.edu/gtc5091/409/">Contact Me</a></li>
+        <li>
+            <a href="files.html">Working With Files</a>
+            <ul id="submenu_files">
+                <li><a href="chmod.html">chmod</a></li>
+                <li><a href="cp.html">cp</a></li>
+                <li><a href="diff.html">diff</a></li>
+                <li><a href="gzip.html">gzip</a></li>
+                <li><a href="lpr.html">lpr</a></li>
+                <li><a href="ls.html">ls</a></li>
+                <li><a href="mv.html">mv</a></li>
+                <li><a href="rm.html">rm</a></li>
+                
+            </ul>
+        </li>
+           <li>
+            <a href="directories.html">Directory Commands</a>
+            <ul>
+                <li><a href="pwd.html">pwd</a></li>
+                <li><a href="mkdir.html">mkdir</a></li>
+                <li><a href="rmdir.html">rmdir</a></li>
+                <li><a href="cd.html">cd</a></li>
+            </ul>
+        </li>
+           <li>
+            <a href="keeping_tabs.html">Keeping Tabs</a>
+            <ul>
+                <li><a href="elm.html">elm</a></li>
+                <li><a href="finger.html">finger</a></li>
+                <li><a href="talk.html">talk</a></li>
+                <li><a href="who.html">who</a></li>
+            </ul>
+           </li>
+           <li><a href="form.html">Final Quiz</a></li>
+    </ul>
+   </div>
+<div id="content">
+    <h2>The finger Command: What Are You Up To?</h2>
+    
+    <p>Like the w and who commands, the finger command can be used to get information about the user. However, there are subtle differences in both the
+    amount and kind of information that the finger command gives. For instance, not only does it allow you to see who's logged in, but it also gives
+    even more information.</p>
+    <p>With the finger command, you can view the last time that the user read their email and other pieces of
+    information that are stored in a single file called <em>.plan</em>. In this file, people store practical information, such as addresses and phone
+    numbers. Using this command, you can also see this information displayed. You can also use the finger command on yourself, with which you can use
+    to view your own information. The syntax and applied example for this command can be found below:</p>
+    
+    <ul>
+        <li><em>finger username</em></li>
+        <li><em>finger gto5873</em></li>
+    </ul>
+    <p>While this command may seem useful, it may not work for all sites. There are some sites from which you will not be able to retrieve any
+    information at all. Also, the information that you receive with the command may vary from user to user. Nevertheless, the finger command
+    will list any information about the user that is available for display. </p>
+    <div id="footer">
+    <p>Copyright &copy; Gary Cunningham. All Rights Reserved</p>
+</div>
+</div>
+ <div id="right">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li>Home Page
+                <ul>
+                   <li>Intro to Unix</li> 
+                </ul>
+                </li>
+                <li>About The Site
+                <ul>
+                    <li>Navigation</li>
+                    <li>Chunking the Content</li>
+                </ul>
+                </li>
+                <li>Contact Me</li>
+                <li>Working With Files
+                <ul>
+                    <li>Chmod</li>
+                    <li>Cp</li>
+                    <li>Diff</li>
+                    <li>Gzip</li>
+                    <li>Lpr</li>
+                    <li>Ls</li>
+                    <li>Mv</li>
+                    <li>Rm</li>
+                </ul>
+                </li>
+                <li>Directory Commands
+                <ul>
+                    <li>Pwd</li>
+                    <li>Mkdir</li>
+                    <li>Rmdir</li>
+                    <li>Cd</li>
+                </ul>
+                </li>
+                 <li>Keeping Tabs
+                <ul>
+                    <li>Elm</li>
+                    <li>Finger</li>
+                    <li>Talk</li>
+                    <li>Who</li>
+                </ul>
+                </li>
+            </ul>
+<button onclick="determineAnswer()">Quick Quiz!</button>
+
+<script>
+function determineAnswer()
+{
+var goodAnswer;
+var wrongAnswer;
+var answer=prompt("What command allows you to see who's logged on?");
+
+if (answer == "Finger" || answer == "finger")
+  {
+    goodAnswer = "Nice job! Correct Answer"
+    alert(goodAnswer);
+  }
+  else {
+    wrongAnswer = "Oops! Sorry, that is not correct..."
+  alert(wrongAnswer);
+  }
+}
+</script>
+        </div>
+
+</body>
+</html>
