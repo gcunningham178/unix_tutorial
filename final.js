@@ -1,24 +1,24 @@
-         
-          $(document).ready(function(){
+   $(document).ready(function(){
      $("#resources1").click(function(){
-    $("#exp1").fadeToggle(1500);
-  });
+      $("#exp1").fadeToggle(1500);
+       });
+            
         $("#resources2").click(function(){
-    $("#exp2").fadeToggle(1500);
-  });
+        $("#exp2").fadeToggle(1500);
+        });
            $("#resources3").click(function(){
-    $("#exp3").fadeToggle(1500);
-  });
+          $("#exp3").fadeToggle(1500);
+          });
               $("#resources4").click(function(){
-    $("#exp4").fadeToggle(1500);
-  });
-              $("p").mouseover(function(){
-    $("em").css({"background-color" : "white", "color":"black", "font-weight":"bolder"});
-  });
+              $("#exp4").fadeToggle(1500);
+           });
+           $("p").mouseover(function(){
+              $("em").css({"background-color" : "white", "color":"black", "font-weight":"bolder"});
+         });
        $("#clickHere").click(function(){
-    $("#dirCom").slideToggle("slow");
-  });
-    });
+          $("#dirCom").slideToggle("slow");
+        });
+       });
          
 
 function validateQuiz()
@@ -38,81 +38,44 @@ function validateQuiz()
 if (one[0].checked == true)
   {
   correct++;
+  }
    if (two[0].checked == true)
     {
     correct++;
+    }
      if (three[1].checked == true)
         {
         correct++;
+        }
             if (four[3].checked == true)
             {
                 correct++;
+            }
                 if (five == "true" || five == "True")
                 {
                     correct++;
+                }
                     if (six[1].checked == true)
                     {
                     correct++;
+                    }
                          if (seven == "talk" || seven == "Talk")
                         {
                         correct++;
+                        }
                             if (eight == "finger" || eight == "Finger")
                             {
                             correct++;
+                            }
                                 if (nine[1].checked == true)
                                 {
                                 correct++;
+                                }
                                     if (ten[4].checked == true)
                                     {
                                     correct++;
-                                    alert("Congratulations, you have all questions correct!");
-                                    return true;
                                     }
-                                     else
-                                    {
                                     alert("You have " + correct + " questions correct out of 10");
-                                    }
-                                }
-                                 else
-                                {
-                                alert("You have " + correct + " questions correct out of 10");
-                                }
-                            }
-                             else
-                            {
-                            alert("You have " + correct + " questions correct out of 10");
-                            }
-                        }
-                         else
-                        {
-                        alert("You have " + correct + " questions correct out of 10");
-                        }
-                    }
-                     else
-                    {
-                    alert("You have " + correct + " questions correct out of 10");
-                    }
-                }
-                 else
-                {
-                    alert("You have " + correct + " questions correct out of 10");
-                }
-            }
-             else
-            {
-            alert("You have " + correct + " questions correct out of 10");
-            }
-        }
-         else
-        {
-        alert("You have " + correct + " questions correct out of 10");
-        }
-    }
-    else
-    {
-        alert("You have " + correct + " questions correct out of 10");
-    }
-  }
+                                    return true;
  
-   
 }
